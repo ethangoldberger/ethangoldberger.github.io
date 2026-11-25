@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethan Goldberger</title>
+<meta name="description" content="Ethan Goldberger — economics and mathematics at the University of Virginia. Research on economic growth and productivity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: plain, formal, academic
+   IDEA: a faculty homepage — the first page of a CV set as a web page
+   PICTURE: a single headshot beside the name
+   COLOUR and TYPE: black on white, grey for secondary text, links underlined; Newsreader throughout
+   LAYOUT: one narrow column, small-caps-free headings, dates right-aligned */
+:root{color-scheme:light dark;
+  --bg:light-dark(#ffffff,#121212);
+  --ink:light-dark(#111111,#e8e8e8);
+  --mute:light-dark(#5f5f5f,#a0a0a0);
+  --rule:light-dark(#dddddd,#2c2c2c)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 Newsreader,Georgia,"Times New Roman",serif;overflow-x:clip}
+a{color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:var(--mute)}
+a:hover{text-decoration-color:var(--ink)}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 max(5vw,20px)}
+h1{font-size:clamp(34px,5vw,42px);font-weight:500;line-height:1.1;margin:0}
+h2{font-size:22px;font-weight:600;margin:0 0 14px}
+header.top{border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:0 22px;padding-top:18px;padding-bottom:18px}
+header.top a{text-decoration:none;color:var(--mute);font-size:17px;padding:8px 0}
+header.top a:hover{color:var(--ink)}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:36px;align-items:start;padding:clamp(40px,6vw,64px) 0 36px}
+.sub{color:var(--mute);margin:6px 0 20px}
+.intro p{margin:0 0 12px}
+.contactline{margin-top:18px}
+.contactline a+a::before{content:"·";color:var(--mute);display:inline-block;margin:0 10px;text-decoration:none}
+.photo{display:block;width:180px;height:auto;aspect-ratio:4/5;object-fit:cover}
+section{padding:28px 0;border-top:1px solid var(--rule)}
+section p{margin:0 0 12px}
+.item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 20px;margin:0 0 16px}
+.item b{font-weight:600}
+.sub-h{font-size:18px;font-weight:600;margin:22px 0 8px}
+.mute{color:var(--mute)}
+.paper{margin:0 0 14px}.paper .t{font-weight:600}.paper .m{color:var(--mute)}
+.item .when{color:var(--mute);white-space:nowrap;text-align:right}
+.item .what{color:var(--mute);grid-column:1/-1}
+.item .desc{grid-column:1/-1;margin-top:2px}
+footer{color:var(--mute);font-size:15px;padding:24px 0 48px;border-top:1px solid var(--rule)}
+@media(max-width:600px){
+  body{font-size:17px}
+  .intro{grid-template-columns:1fr;gap:20px}
+  .photo{order:-1;width:120px}
+  .item{grid-template-columns:1fr}
+  .item .when{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="cv.pdf">CV</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <div>
+      <h1>Ethan Goldberger</h1>
+      <p class="sub">B.A. candidate in Economics and Mathematics, University of Virginia</p>
+      <p>I study economics and mathematics at the University of Virginia, with a minor in physics. My interests are in public finance, health economics, occupational licensing, welfare economics and economic growth.</p>
+      <p>I work as a research assistant in economics and in statistical genomics at UVA.</p>
+      <p class="contactline"><a href="cv.pdf">CV</a><a href="mailto:egoldberger17@gmail.com">egoldberger17@gmail.com</a></p>
+    </div>
+    <img class="photo" src="photo.jpg" alt="Ethan Goldberger" width="640" height="800">
+  </div>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p>I'm interested in fiscal sustainability and the federal debt, the economics of nationalized health care, occupational licensing, and social welfare weights. As a research assistant, I work on long-run U.S. productivity growth using growth accounting and replications of published results.</p>
+    <p>In genomics, I apply mixed linear models, genetic relatedness matrices and colocalization to large-scale sequence data on heart-disease phenotypes.</p>
+    <h3 class="sub-h">Working Papers</h3>
+    <p class="mute"><i>Forthcoming.</i></p>
+    <!-- To add a paper: upload the PDF to the repo, delete the "Forthcoming" line, and copy this block:
+    <div class="paper">
+      <div class="t"><a href="paper-name.pdf">Paper Title</a></div>
+      <div class="m">Working paper, Month Year</div>
+      <div>One- or two-sentence abstract.</div>
+    </div>
+    -->
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="item">
+      <b>Optiver</b><span class="when">Summer 2027</span>
+      <span class="what">Quantitative Intern (incoming)</span>
+    </div>
+    <div class="item">
+      <b>University of Virginia, Department of Economics</b><span class="when">2026 – present</span>
+      <span class="what">Research Assistant</span>
+    </div>
+    <div class="item">
+      <b>University of Virginia, Genomics Research</b><span class="when">2025 – present</span>
+      <span class="what">Research Assistant</span>
+    </div>
+    <div class="item">
+      <b>Capital One</b><span class="when">Summer 2026</span>
+      <span class="what">Business Analyst Intern</span>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="item">
+      <b>University of Virginia</b><span class="when">2024 – 2028 (expected)</span>
+      <span class="what">B.A. Economics and Mathematics, Minor in Physics</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Last updated November 2026</div>
+</footer>
+
+</body>
+</html>
